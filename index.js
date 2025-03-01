@@ -56,6 +56,7 @@ app.put("/canciones/:id", (req, res) => {
     }
 });
 
+//Eliminar una canción
 app.delete("/canciones/:id", (req, res) => {
     const { id } = req.params;
     const repertorio = leerRepertorio();
